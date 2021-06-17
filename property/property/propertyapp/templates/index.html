@@ -1,0 +1,74 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>bhumi star</title>
+	<style type="text/css">
+		
+		.centered {
+    		position: absolute;
+    		top: 50%;
+    		left: 50%;
+    		transform: translate(-50%, -50%);
+		}
+		#front{
+			font-size: 20px;
+		}
+		#bhumi{
+			font-family: 'Kirang Haerang', cursive;
+			font-size: 55px;
+			color: white;
+			margin-top: 0px;
+		}
+		#tit{
+			color:white;
+			text-decoration: none;
+			text-shadow: 6px 6px 10px black;
+		}
+		#nxt{
+			color: white;
+			position: absolute;
+        	bottom: 10px;
+        	right: 16px;
+        	font-size: 22px;
+		}
+		#tit:hover{
+			color: lightgrey;
+		}
+		#tit:active{
+			color: blue
+		}
+		@media screen and (max-width: 500px){
+			.centered {
+	    		position: absolute;
+	    		top: 50%;
+	    		left: 50%;
+	    		transform: translate(-50%, -50%);
+			}
+			#bhumi{
+				font-family: 'Kirang Haerang', cursive;
+				font-size: 48px;
+				color: white;
+				margin-top: 0px;
+			}
+			#front{
+				font-size: 17px;
+			}
+		}
+	
+	</style>
+</head>
+<body style="background-color: #ba0b0b">
+	<div class = "centered">
+ 		<img id = "logohome" src="{% static 'propertyapp/images/logohome.png' %}" width="200" height="200">
+ 		<p id = "front" style="color: yellow"><b>INDIA'S NO. 1 PROPERTY APP</b></p>
+ 		<p id = "bhumi">BHUMI STAR</p>
+ 	</div>
+ 	<p id = "nxt"><a id = "tit" href="{% url 'next1' %}">Next..</a></p>
+
+</body>
+</html>

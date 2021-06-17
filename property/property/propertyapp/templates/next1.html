@@ -1,0 +1,82 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>bhumi star</title>
+	<style type="text/css">
+		
+		.centered {
+    		text-align: center;
+		}
+		.cntered {
+    		text-align: center;
+		}
+		
+		#next1font{
+			font-size: 43px;
+			text-shadow: 6px 6px 10px grey;
+		}
+		#next1font1{
+			font-size: 25px;
+			text-shadow: 2px 2px 7px lightgrey;
+		}
+		#next1font1:hover{
+			color: #ba0b0b;
+			text-shadow: 4px 4px 7px grey;
+		}
+		
+		#tit1{
+			color:#ba0b0b;
+			text-decoration: none;
+			text-shadow: 6px 6px 10px black;
+		}
+		#nxt1{
+			color: #ba0b0b;
+			position: absolute;
+        	bottom: 10px;
+        	right: 21px;
+        	font-size: 22px;
+		}
+		#tit1:hover{
+			color: black;
+		}
+		#tit1:active{
+			color: blue
+		}
+		@media screen and (max-width: 500px){
+			#next1font{
+				font-size: 34px;
+				text-shadow: 6px 6px 10px grey;
+			}
+			#next1font1{
+				font-size: 21px;
+				text-shadow: 2px 2px 7px lightgrey;
+			}
+		}
+	
+	</style>
+</head>
+<body style="background-color: #f5f7eb">
+	<div class = "centered">
+ 		<P id = "next1font"><b>Hey! what's on your mind?</b></P>
+ 	</div>
+ 	<div class = "cntered">
+ 		<P id = "next1font1"><b>I want buy a property</b></P>
+ 		<hr id = "hr1" width="300px">
+ 		<P id = "next1font1"><b>My Project Under construction</b></P>
+ 		<hr id = "hr1" width="300px">
+ 		<P id = "next1font1"><b>I want Sell a Property</b></P>
+ 		<hr id = "hr1" width="300px">
+ 		<P id = "next1font1"><b>I want a joint venture with Bhumi star</b></P>
+ 		<hr id = "hr1" width="300px">
+ 		<P id = "next1font1"><b>Find co-developer</b></P>
+ 		<hr id = "hr1" width="300px">
+
+ 	</div>
+ 	<p id = "nxt1"><a id = "tit1" href="{% url 'next2' %}">Next..</a></p>
+</body>
+</html>

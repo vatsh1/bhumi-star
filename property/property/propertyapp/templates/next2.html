@@ -1,0 +1,168 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>bhumi star</title>
+	<style type="text/css">
+		#logoarrow{
+			margin-left: 8px;
+			float: left;
+		}
+		.cnter {
+			position: relative;
+    		text-align: center;
+    		margin-right: auto;
+    		margin-left: auto;
+		}
+		.centered {
+			position: relative;
+    		text-align: center;
+    		margin-right: auto;
+    		margin-left: auto;
+		}
+		#hed {
+			color: grey;
+    		padding-right: 350px;
+		}
+		#seach{
+			color: black;
+		}
+		#logotarget{
+			vertical-align: middle;
+		}
+		#logoimg{
+			vertical-align: middle;
+		}
+		td:hover{
+			vertical-align: middle;
+			box-shadow: 7px 7px 5px lightgrey;
+		}
+		.loc{
+			padding-top: 12px;
+			padding-right: 390px;
+		}
+		#pop{
+			padding-right: 390px;
+			padding-top: 12px;
+		}
+		.search-feild{
+			width: 600px;
+			height: 40px;
+			padding: 4px;
+			padding-left: 12px;
+			border: none;
+			border-radius: 20px;
+			outline: none;
+		}
+		.search-feild:active{
+			box-shadow: 6px 6px 5px lightgrey;
+		}
+		#tab{
+			padding-right: 100px;
+			margin-right: auto;
+    		margin-left: auto;
+    		padding-top: 1px;
+		}
+		th, td {
+  			padding-left: 35px;
+  			padding-right: 35px;
+  			text-align: center;
+  			margin: auto;
+  			border-radius: 45%;
+		}
+		
+		#tit1{
+			color:white;
+			text-decoration: none;
+			text-shadow: 6px 6px 10px black;
+			background-color: #ba0b0b;
+			padding: 6px;
+			border-radius: 25%;
+		}
+		#nxt1{
+			color: #ba0b0b;
+			position: absolute;
+        	bottom: 10px;
+        	right: 21px;
+        	font-size: 22px;
+		}
+		#tit1:hover{
+			color: yellow;
+		}
+		#tit1:active{
+			color: blue
+		}
+		@media screen and (max-width: 500px){
+			.search-feild{
+				width: 90%;
+				height: 40px;
+				padding: 4px;
+				padding-left: 12px;
+				border: none;
+				border-radius: 20px;
+				outline: none;
+			}
+			.centered {
+				position: relative;
+	    		text-align: center;
+	    		margin-right: 1%;
+	    		margin-left: 1%;
+			}
+			.loc{
+				padding-top: 12px;
+				padding-right: 270px;
+			}
+			#hed {
+				color: grey;
+	    		padding-right: 150px;
+			}
+			#pop{
+				padding-right: 270px;
+				padding-top: 12px;
+			}
+		}
+	
+	</style>
+</head>
+<body style="background-color: #f5f7eb">
+
+	<a href="{% url 'next1' %}"><img id = "logoarrow" src="{% static 'propertyapp/images/arrowicon.png' %}" width="20" height="20"></a>
+
+		<div class = "centered">
+			<h2 id = "hed">You are looking for ......</h2>
+	 		<input class="search-feild" type="text" name="cat" placeholder="Enter a city or locality or project">
+	 		<div class="loc">
+		 		<img id = "logotarget" src="{% static 'propertyapp/images/iconstarget.png' %}" width="20" height="20">
+		 		<span id = "seach"><b>search near me</b></span>
+	 		</div>
+	 	</div>
+	<div class = "cnter" >
+	 	<div class = "cntered">
+	 		<h3 id = "pop"><b>Popular Cities</b></h3>
+	 		<table id = "tab" style="width:150px">
+				  <tr>
+				    <td><img id = "logoimg" src="{% static 'propertyapp/images/noida.png' %}" width="50" height="50"><p id = "seach"><b>Noida</b></p></td>
+				    <td><img id = "logoimg" src="{% static 'propertyapp/images/mumbai.png' %}" width="50" height="50"><p id = "seach"><b>Mumbai</b></p></td>
+				    <td><img id = "logoimg" src="{% static 'propertyapp/images/noida.png' %}" width="50" height="50"><p id = "seach"><b>Bangalore</b></p></td>
+				  </tr>
+				  <tr>
+				    <td><img id = "logoimg" src="{% static 'propertyapp/images/delhi.png' %}" width="50" height="50"><p id = "seach"><b>New Delhi</b></p></td>
+				    <td><img id = "logoimg" src="{% static 'propertyapp/images/noida.png' %}" width="50" height="50"><p id = "seach"><b>Ahemdabad</b></p></td>
+				    <td><img id = "logoimg" src="{% static 'propertyapp/images/noida.png' %}" width="50" height="50"><p id = "seach"><b>Pune</b></p></td>
+				  </tr>
+				  <tr>
+				    <td><img id = "logoimg" src="{% static 'propertyapp/images/noida.png' %}" width="50" height="50"><p id = "seach"><b>Gurgaon</b></p></td>
+				    <td><img id = "logoimg" src="{% static 'propertyapp/images/noida.png' %}" width="50" height="50"><p id = "seach"><b>Ghaziabad</b></p></td>
+				    <td><img id = "logoimg" src="{% static 'propertyapp/images/noida.png' %}" width="50" height="50"><p id = "seach"><b>Greater Noida</b></p></td>
+				  </tr>
+			</table>
+
+	 	</div>
+ 	</div>
+ 	<p id = "nxt1"><a id = "tit1" href="{% url 'main' %}">Next..</a></p>
+</body>
+</html>
